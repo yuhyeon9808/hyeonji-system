@@ -15,6 +15,8 @@ export default function WordPadPage({ children }: { children: ReactNode }) {
   };
 
   const title = titleMap[pathname] ?? 'WordPad';
+  const shortTitle = title.includes('-') ? title.split('-')[0].trim() : title;
+
   return (
     <div className="flex flex-col md:fixed md:top-10 lg:top-28 md:bottom-20 lg:left-40 md:left-35 md:right-10 lg:right-40 bg-gray-light font-sam border-window h-screen md:h-auto md:min-h-0">
       <div className=" mt-1 mx-3 h-8 bg-blue-point flex items-center">
@@ -28,9 +30,7 @@ export default function WordPadPage({ children }: { children: ReactNode }) {
         <p className="text-24 text-white-sof hidden md:block text-white-soft">
           {title}
         </p>
-        <p className="text-24 text-white-soft md:hidden">
-          {title.split('-')[0]?.trim()}
-        </p>
+        <p className="text-24 text-white-soft md:hidden">{shortTitle}</p>
         <div className="flex-1 flex gap-1 justify-end">
           <button className="border-window  bg-gray-light p-1">
             <Image
