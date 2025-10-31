@@ -29,7 +29,7 @@ export default function WordPadPage({ children }: { children: ReactNode }) {
           {title}
         </p>
         <p className="text-24 text-white-soft md:hidden">
-          {title.split('-')[0]}
+          {title.split('-')[0]?.trim()}
         </p>
         <div className="flex-1 flex gap-1 justify-end">
           <button className="border-window  bg-gray-light p-1">
