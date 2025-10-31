@@ -4,7 +4,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-export default function Nav({ open }: { open: boolean }) {
+export default function Nav({
+  open,
+  setOpen,
+}: {
+  open: boolean;
+  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}) {
   return (
     <>
       {open && (
@@ -21,7 +27,10 @@ export default function Nav({ open }: { open: boolean }) {
           <ul className="grid grid-rows-5 h-full flex-1 ">
             {DESKTOP_ICONS.map((item, idx) => (
               <Link href={item.href} key={idx}>
-                <li className="flex items-center hover:bg-blue-point hover:text-white-soft py-3 pl-4">
+                <li
+                  className="flex items-center hover:bg-blue-point hover:text-white-soft py-3 pl-4"
+                  onClick={() => setOpen((prev) => !prev)}
+                >
                   <Image
                     src={item.Icon}
                     alt={item.name}

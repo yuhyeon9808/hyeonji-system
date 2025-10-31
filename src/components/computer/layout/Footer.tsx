@@ -24,7 +24,7 @@ export default function Footer() {
 
   return (
     <>
-      <Nav open={open} />
+      <Nav open={open} setOpen={setOpen} />
       <footer className="w-full h-10 bg-gray-light border border-t-emerald-50 fixed bottom-0 flex items-center">
         <Window setOpen={setOpen} />
         <WordPad title={title} />
