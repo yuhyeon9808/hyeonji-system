@@ -14,8 +14,11 @@ export default function WordPadPage({ children }: { children: ReactNode }) {
     '/': 'System ready - WordPad',
   };
 
-  const title = titleMap[pathname] ?? 'WordPad';
-  const shortTitle = title.includes('-') ? title.split('-')[0].trim() : title;
+  const title = (pathname && titleMap[pathname]) || 'WordPad';
+  const shortTitle =
+    typeof title === 'string' && title.includes('-')
+      ? title.split('-')[0].trim()
+      : title;
 
   return (
     <div className="flex flex-col md:fixed md:top-10 lg:top-28 md:bottom-20 lg:left-40 md:left-35 md:right-10 lg:right-40 bg-gray-light font-sam border-window h-screen md:h-auto md:min-h-0">
