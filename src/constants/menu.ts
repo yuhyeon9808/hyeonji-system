@@ -16,12 +16,12 @@ export const DESKTOP_ICONS = [
   },
   {
     name: 'Portfolio',
-    href: '/system/install',
     Icon: '/icons/file.png',
+    type: 'action',
   },
   {
     name: 'Contact',
-    href: '/system/contact',
     Icon: '/icons/envelope1.png',
+    type: 'action',
   },
 ];

@@ -5,25 +5,12 @@ import React, { ReactNode } from 'react';
 
 const MENU = ['File', 'Edit', 'View', 'Insert', 'Format', 'Help'];
 
-const ICON1 = [
-  { src: '/icons/file3.png', alt: '새 파일' },
-  { src: '/icons/directory_open.png', alt: '파일 열기' },
-  { src: '/icons/floppy.png', alt: '저장' },
-];
-
-const ICON2 = [
-  { src: '/icons/fax.png', alt: '프린트' },
-  { src: '/icons/search_file.png', alt: '검색' },
-];
-
 export default function WordPadPage({ children }: { children: ReactNode }) {
   const pathname = usePathname();
   const titleMap: Record<string, string> = {
     '/system/about': 'About - WordPad',
     '/system/qmate': 'Qmate - WordPad',
     '/system/scentrie': 'Scentrie - WordPad',
-    '/system/install': 'Portfolio_Download_Log - WordPad',
-    '/system/contact': 'Contact - WordPad',
     '/': 'System ready - WordPad',
   };
 

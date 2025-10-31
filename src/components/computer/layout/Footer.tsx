@@ -7,16 +7,19 @@ import RegionalSettings from '../RegionalSettings';
 import Version from '../Version';
 import Nav from './Nav';
 
-export default function Footer() {
+interface FooterProps {
+  open: boolean;
+  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  onOpenContact: () => void;
+}
+
+export default function Footer({ open, setOpen, onOpenContact }: FooterProps) {
   const pathname = usePathname();
-  const [open, setOpen] = useState(false);
 
   const titleMap: Record<string, string> = {
     '/system/about': 'About - WordPad',
     '/system/qmate': 'Qmate - WordPad',
     '/system/scentrie': 'Scentrie - WordPad',
-    '/system/install': 'Portfolio_Download_Log - WordPad',
-    '/system/contact': 'Contact - WordPad',
     '/': 'System ready - WordPad',
   };
 
@@ -24,7 +27,7 @@ export default function Footer() {
 
   return (
     <>
-      <Nav open={open} setOpen={setOpen} />
+      <Nav open={open} setOpen={setOpen} onOpenContact={onOpenContact} />
       <footer className="w-full h-10 bg-gray-light border border-t-emerald-50 fixed bottom-0 flex items-center">
         <Window setOpen={setOpen} />
         <WordPad title={title} />
