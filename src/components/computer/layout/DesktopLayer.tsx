@@ -5,19 +5,26 @@ import Footer from '@/src/components/computer/layout/Footer';
 import Image from 'next/image';
 import WordPadPage from '@/src/components/computer/WordPadPage';
 import Contact from '@/src/components/contact/Contact';
+
 import React, { useState } from 'react';
+import DownloadModal from '../../portfolio/DownloadModal';
 
 export default function DesktopLayer({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const [isContactOpen, setIsContactOpen] = useState(false);
+  const [activeModal, setActiveModal] = useState<null | 'contact' | 'download'>(
+    null
+  );
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
     <>
-      <DesktopIcons onOpenContact={() => setIsContactOpen(true)} />
+      <DesktopIcons
+        onOpenContact={() => setActiveModal('contact')}
+        onOpenDownload={() => setActiveModal('download')}
+      />
 
       <Image
         src="/icons/back.png"
@@ -32,10 +39,17 @@ export default function DesktopLayer({
       <Footer
         open={isNavOpen}
         setOpen={setIsNavOpen}
-        onOpenContact={() => setIsContactOpen(true)}
+        onOpenContact={() => setActiveModal('contact')}
+        onOpenDownload={() => setActiveModal('download')}
       />
 
-      {isContactOpen && <Contact onClose={() => setIsContactOpen(false)} />}
+      {activeModal === 'contact' && (
+        <Contact onClose={() => setActiveModal(null)} />
+      )}
+
+      {activeModal === 'download' && (
+        <DownloadModal onClose={() => setActiveModal(null)} />
+      )}
     </>
   );
 }

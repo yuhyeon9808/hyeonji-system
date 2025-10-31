@@ -17,11 +17,11 @@ export const DESKTOP_ICONS = [
   {
     name: 'Portfolio',
     Icon: '/icons/file.png',
-    type: 'action',
+    type: 'download',
   },
   {
     name: 'Contact',
     Icon: '/icons/envelope1.png',
-    type: 'action',
+    type: 'contact',
   },
 ];

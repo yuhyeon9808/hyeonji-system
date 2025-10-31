@@ -48,7 +48,7 @@ export default function WindowModal({
             {children}
           </div>
 
-          <div className="flex gap-3 font-bold text-14 justify-center pb-4">
+          <div className="flex gap-3 font-bold text-14 justify-center pb-6">
             <button
               className="border-window py-1 w-[100px]"
               onClick={onConfirm || onClose}
