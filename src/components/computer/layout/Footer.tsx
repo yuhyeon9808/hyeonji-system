@@ -11,6 +11,7 @@ interface FooterProps {
   open: boolean;
   setOpen: React.Dispatch<React.SetStateAction<boolean>>;
   onOpenContact: () => void;
+  onOpenDownload: () => void;
 }
 
 export default function Footer({ open, setOpen, onOpenContact }: FooterProps) {
