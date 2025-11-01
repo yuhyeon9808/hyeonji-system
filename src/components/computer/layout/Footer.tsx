@@ -14,7 +14,12 @@ interface FooterProps {
   onOpenDownload: () => void;
 }
 
-export default function Footer({ open, setOpen, onOpenContact }: FooterProps) {
+export default function Footer({
+  open,
+  setOpen,
+  onOpenContact,
+  onOpenDownload,
+}: FooterProps) {
   const pathname = usePathname();
 
   const titleMap: Record<string, string> = {
@@ -28,7 +33,12 @@ export default function Footer({ open, setOpen, onOpenContact }: FooterProps) {
 
   return (
     <>
-      <Nav open={open} setOpen={setOpen} onOpenContact={onOpenContact} />
+      <Nav
+        open={open}
+        setOpen={setOpen}
+        onOpenContact={onOpenContact}
+        onOpenDownload={onOpenDownload}
+      />
       <footer className="w-full h-10 bg-gray-light border border-t-emerald-50 fixed bottom-0 flex items-center">
         <Window setOpen={setOpen} />
         <WordPad title={title} />
