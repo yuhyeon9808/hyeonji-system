@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React from 'react';
 import Window from '../Window';
 import WordPad from '../WordPad';
 import { usePathname } from 'next/navigation';

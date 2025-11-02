@@ -16,7 +16,7 @@ export default function WordPadPage({ children }: { children: ReactNode }) {
 
   const title = titleMap[pathname] ?? 'WordPad';
   return (
-    <div className="flex flex-col md:fixed md:top-10 lg:top-28 md:bottom-20 lg:left-40 md:left-35 md:right-10 lg:right-40 bg-gray-light font-sam border-window h-screen md:h-auto md:min-h-0">
+    <div className="flex flex-col md:fixed md:top-10 lg:top-28 md:bottom-20 lg:left-40 md:left-35 md:right-10 lg:right-40 bg-gray-light font-sam border-window h-screen pb-10 md:pb-0 md:h-auto md:min-h-0">
       <div className=" mt-1 mx-3 h-8 bg-blue-point flex items-center">
         <Image
           src="/icons/pad1.png"
@@ -100,7 +100,7 @@ export default function WordPadPage({ children }: { children: ReactNode }) {
           </button>
         </div>
       </div>
-      <div className="bg-white-soft mx-3 flex-1 border-2 border-gray-dark border-b-gray border-r-gray overflow-y-auto">
+      <div className="h-full bg-white-soft mx-3 flex-1 border-2 border-gray-dark border-b-gray border-r-gray overflow-y-auto">
         {children}
       </div>
       <div className="h-8 border-t-2 border-white-soft mx-3 flex justify-between items-center">
