@@ -34,6 +34,7 @@
   --color-gray-check: #dadada;
   --color-white-soft: #fdfdfd;
   --color-blue-point: #000080;
+  --color-highlights: #d9f5fb;
 }
 
 body {
@@ -77,5 +78,12 @@ button:hover {
   }
   50% {
     border-color: gray;
+  }
+}
+
+@supports selector(::-webkit-scrollbar) {
+  * {
+    scrollbar-width: auto !important;
+    scrollbar-color: auto !important;
   }
 }

@@ -22,14 +22,15 @@ export default function Footer({
 }: FooterProps) {
   const pathname = usePathname();
 
-  const titleMap: Record<string, string> = {
-    '/system/about': 'About - WordPad',
-    '/system/qmate': 'Qmate - WordPad',
-    '/system/scentrie': 'Scentrie - WordPad',
-    '/': 'System ready - WordPad',
-  };
-
-  const title = titleMap[pathname];
+  const title = pathname.startsWith('/system/qmate')
+    ? 'Qmate - WordPad'
+    : pathname.startsWith('/system/scentrie')
+    ? 'Scentrie - WordPad'
+    : pathname.startsWith('/system/about')
+    ? 'About - WordPad'
+    : pathname === '/'
+    ? 'System ready - WordPad'
+    : 'WordPad';
 
   return (
     <>
