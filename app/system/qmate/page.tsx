@@ -1,6 +1,6 @@
-import Index from '@/src/qmate/Index';
+import Qmate from '@/src/components/qmate/Qmate';
 import React from 'react';
 
 export default function page() {
-  return <Index />;
+  return <Qmate />;
 }

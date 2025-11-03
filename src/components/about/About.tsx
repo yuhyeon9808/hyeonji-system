@@ -51,10 +51,17 @@ export default function About() {
         <div className="px-2 flex flex-col lg:items-end my-5">
           <div>
             <Title title="Developer_Info" w={350} />
-            <a href="https://github.com/yuhyeon9808" target="_blank">
-              <span className="inline-block mt-3">
-                github:https://github.com/yuhyeon9808
-              </span>
+            <a
+              href="https://github.com/yuhyeon9808"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p className="inline-block mt-3 ">
+                github:
+                <span className="hover:text-blue-600">
+                  https://github.com/yuhyeon9808
+                </span>
+              </p>
             </a>
             <span className="block ">email : bwj9808@gmail.com</span>
           </div>
