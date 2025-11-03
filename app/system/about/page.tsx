@@ -1,5 +1,5 @@
-import Profile from '@/src/components/about/Profile';
+import About from '@/src/components/about/About';
 
 export default function AboutPage() {
-  return <Profile />;
+  return <About />;
 }
