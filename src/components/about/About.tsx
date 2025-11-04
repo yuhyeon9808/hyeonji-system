@@ -22,7 +22,7 @@ export default function About() {
 
         <div className="px-2">
           <Title title="User_Manual" w={160} />
-          <div className="font-gal my-5 text-14">
+          <div className="font-sans my-5 text-14">
             <span className="font-bold inline-block mb-5 ">
               새로운 시작점에서 :
             </span>
@@ -38,7 +38,7 @@ export default function About() {
         </div>
         <div className="px-2">
           <Title title="Frontend_Stack_v1.0" w={220} />
-          <div className="font-gal my-5 text-14">
+          <div className=" my-5 ">
             <p className="  tracking-[0.02em] font-sam text-18 leading-6">
               TypeScript · JavaScript <br /> Next.js / React · Tailwind CSS ·
               Zustand · React-Query
