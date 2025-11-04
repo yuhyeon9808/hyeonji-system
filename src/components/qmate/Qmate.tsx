@@ -6,7 +6,7 @@ export default function Qmate() {
     <div className="w-full my-14 border-y">
       <div className="flex flex-col items-center mx-1 sm:px-0">
         <h2 className="mt-10 mb-10 pb-3 text-4xl text-center border-b">
-          FAX TRANSMISSION REPORT
+          Q-MATE FAX TRANSMISSION REPORT
         </h2>
 
         <dl className="grid grid-cols-1 lg:grid-cols-[60px_1fr] gap-x-6 gap-y-1 lg:gap-y-2 leading-relaxed text-18 w-[310px] sm:w-[400px] md:w-[540px] mx-2">
@@ -52,7 +52,7 @@ export default function Qmate() {
           <ul className="font-sans text-14 leading-[2.3] tracking-[0.02em] pb-3">
             <li>□ 1대1 연결 </li>
             <li>□ 오늘의 질문 &amp; 커스텀 질문</li>
-            <li>□ 캘린더 &amp; 기념일</li>
+            <li>□ 캘린더</li>
             <li>□ 시간대별 테마</li>
             <li>□ 캐릭터 성장 시스템</li>
           </ul>
@@ -93,7 +93,8 @@ export default function Qmate() {
               자동 전환
             </li>
             <li>
-              □ 커스텀 질문 — 커스텀/기본 단일 구조, 토글 필터로 선택적 조회
+              □ 커스텀 질문 — 커스텀 질문을 기본 질문과 같은 구조로 통합해
+              관리하고, 토글을 통해 커스텀만 선택적으로 조회 가능하도록 구성
             </li>
             <li>
               □ 일정 리스트 — page/size 페이지네이션, 기념일 삭제 제한으로
@@ -113,10 +114,12 @@ export default function Qmate() {
               서버·클라이언트 시간 불일치로 생긴 테마 오류를, 서버 시간 기반
               쿠키와 data-theme 초기화로 일관되게 해결
             </li>
-            □ <span className="text-18 font-sam">OAuth Redirect Error — </span>
-            HTTPS/HTTP 불일치 오류 해결을 위해, FE가 콜백부터 라우팅까지
-            주도하고 BE는 토큰 발급만 담당하도록 아키텍처를 전환하여 안정적인
-            연동 달성
+            <li>
+              □<span className="text-18 font-sam">OAuth Redirect Error — </span>
+              HTTPS/HTTP 불일치 오류 해결을 위해, FE가 콜백부터 라우팅까지
+              주도하고 BE는 토큰 발급만 담당하도록 아키텍처를 전환하여 안정적인
+              연동 달성
+            </li>
           </ul>
         </div>
       </div>
