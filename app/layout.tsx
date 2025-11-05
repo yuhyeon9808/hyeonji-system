@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko">
-      <body className="h-full overflow-hidden">
+      <body className="h-full ">
         <DesktopLayer>{children}</DesktopLayer>
       </body>
     </html>

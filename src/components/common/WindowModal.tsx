@@ -7,7 +7,6 @@ interface WindowModalProps {
   onConfirm?: () => void;
   confirmText?: string;
   closeText?: string;
-  width?: number;
   height?: number;
   children: React.ReactNode;
 }
@@ -18,15 +17,14 @@ export default function WindowModal({
   onConfirm,
   confirmText = 'OK',
   closeText = 'Close',
-  width = 400,
   height = 290,
   children,
 }: WindowModalProps) {
   return (
     <div className="fixed inset-0 z-50 pointer-events-none">
       <div
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-t border-l border-gray-light pointer-events-auto"
-        style={{ width, height }}
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-t border-l border-gray-light pointer-events-auto w-[328px] sm:w-[400px]"
+        style={{ height }}
       >
         <div className="bg-gray-light border-window flex flex-col h-full">
           <div className="h-9 mx-1 mt-1 bg-blue-point text-white-soft flex items-center justify-between">
@@ -44,7 +42,7 @@ export default function WindowModal({
             </button>
           </div>
 
-          <div className="flex-1 flex flex-col justify-center items-center text-center py-6 px-4">
+          <div className="flex-1 flex flex-col justify-center items-center text-center py-6 px-4 text-14 sm:text-16">
             {children}
           </div>
 
