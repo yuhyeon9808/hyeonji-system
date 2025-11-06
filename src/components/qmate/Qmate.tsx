@@ -31,9 +31,52 @@ export default function Qmate() {
           </dd>
         </dl>
       </div>
-
-      <div className="w-full flex flex-col items-center">
+      <div className="w-full flex flex-col items-center ">
         <hr className="w-full h-[1px] mt-10 bg-[repeating-linear-gradient(to_right,#737373_0_10px,transparent_10px_13px)] border-none" />
+        <div className="w-[310px] sm:w-[400px] md:w-[540px] mx-2">
+          <p className="pt-3 pb-1 text-18">LINKS :</p>
+
+          <dl className="grid sm:grid-cols-[120px_1fr] gap-x-3 gap-y-1 font-sam text-18 leading-[1.9] tracking-[0.02em] ">
+            <dt>DEPLOYMENT :</dt>
+            <dd>
+              <a
+                href="https://q-mate.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-blue-600 break-all"
+              >
+                https://q-mate.vercel.app
+              </a>
+            </dd>
+
+            <dt>DOCS :</dt>
+            <dd>
+              <a
+                href="https://buly.kr/BeLEiFS"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-blue-600 break-all text-blue-600"
+              >
+                https://buly.kr/BeLEiFS
+              </a>
+            </dd>
+
+            <dt>GITHUB :</dt>
+            <dd>
+              <a
+                href="https://github.com/Sua90827/q-mate"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-blue-600 break-all"
+              >
+                https://github.com/Sua90827/q-mate
+              </a>
+            </dd>
+          </dl>
+        </div>
+      </div>
+      <div className="w-full flex flex-col items-center">
+        <hr className="w-full h-[1px] mt-3 bg-[repeating-linear-gradient(to_right,#737373_0_10px,transparent_10px_13px)] border-none" />
         <div className="w-[310px] sm:w-[400px] md:w-[540px] mx-2">
           <p className="pt-3 pb-1 text-18">MESSAGE :</p>
           <p className="font-sans text-14 leading-[1.9] tracking-[0.02em]">
@@ -121,51 +164,6 @@ export default function Qmate() {
               연동 달성
             </li>
           </ul>
-        </div>
-      </div>
-
-      <div className="w-full flex flex-col items-center ">
-        <hr className="w-full h-[1px] mt-3 bg-[repeating-linear-gradient(to_right,#737373_0_10px,transparent_10px_13px)] border-none" />
-        <div className="w-[310px] sm:w-[400px] md:w-[540px] mx-2">
-          <p className="pt-3 pb-1 text-18">LINKS :</p>
-
-          <dl className="grid sm:grid-cols-[120px_1fr] gap-x-3 gap-y-1 font-sam text-18 leading-[1.9] tracking-[0.02em] ">
-            <dt>DEPLOYMENT :</dt>
-            <dd>
-              <a
-                href="https://q-mate.vercel.app"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline hover:text-blue-600 break-all"
-              >
-                https://q-mate.vercel.app
-              </a>
-            </dd>
-
-            <dt>DOCS :</dt>
-            <dd>
-              <a
-                href="https://buly.kr/BeLEiFS"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline hover:text-blue-600 break-all"
-              >
-                https://buly.kr/BeLEiFS
-              </a>
-            </dd>
-
-            <dt>GITHUB :</dt>
-            <dd>
-              <a
-                href="https://github.com/Sua90827/q-mate"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline hover:text-blue-600 break-all"
-              >
-                https://github.com/Sua90827/q-mate
-              </a>
-            </dd>
-          </dl>
         </div>
         <hr className="w-full h-[1px] mt-3 bg-[repeating-linear-gradient(to_right,#737373_0_10px,transparent_10px_13px)] border-none" />
       </div>

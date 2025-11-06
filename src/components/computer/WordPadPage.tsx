@@ -14,6 +14,8 @@ export default function WordPadPage({ children }: { children: ReactNode }) {
     ? 'Scentrie - WordPad'
     : pathname.startsWith('/system/about')
     ? 'About - WordPad'
+    : pathname.startsWith('/system/portfolio')
+    ? 'Portfolio - WordPad'
     : pathname === '/'
     ? 'System ready - WordPad'
     : 'WordPad';

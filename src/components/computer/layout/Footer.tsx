@@ -28,6 +28,8 @@ export default function Footer({
     ? 'Scentrie - WordPad'
     : pathname.startsWith('/system/about')
     ? 'About - WordPad'
+    : pathname.startsWith('/system/portfolio')
+    ? 'Portfolio - WordPad'
     : pathname === '/'
     ? 'System ready - WordPad'
     : 'WordPad';
