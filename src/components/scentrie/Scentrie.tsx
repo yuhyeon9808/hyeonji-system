@@ -27,8 +27,59 @@ export default function Scentrie() {
         </dl>
       </div>
 
-      <div className="w-full flex flex-col items-center">
+      <div className="w-full flex flex-col items-center ">
         <hr className="w-full h-[1px] mt-10 bg-[repeating-linear-gradient(to_right,#737373_0_10px,transparent_10px_13px)] border-none" />
+        <div className="w-[310px] sm:w-[400px] md:w-[540px] mx-2">
+          <p className="pt-3 pb-1 text-18">LINKS :</p>
+
+          <dl className="grid sm:grid-cols-[140px_1fr] gap-x-3 gap-y-1 font-sam text-18 leading-[1.9] tracking-[0.02em] ">
+            <dt>DEPLOYMENT :</dt>
+            <dd>
+              <a
+                href="https://scentrie.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-blue-600 break-all"
+              >
+                https://scentrie.vercel.app
+              </a>
+            </dd>
+
+            <dt>TEST ACCOUNT :</dt>
+            <dd>
+              ID : test@gmail.com <br />
+              PW : test1234
+            </dd>
+
+            <dt>DOCS :</dt>
+            <dd>
+              <a
+                href="https://buly.kr/BTQUWud"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-blue-600 break-all text-blue-600"
+              >
+                https://buly.kr/BTQUWud
+              </a>
+            </dd>
+
+            <dt>GITHUB :</dt>
+            <dd>
+              <a
+                href="https://github.com/yuhyeon9808/scentrie"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-blue-600 break-all"
+              >
+                https://github.com/yuhyeon9808/scentrie
+              </a>
+            </dd>
+          </dl>
+        </div>
+      </div>
+
+      <div className="w-full flex flex-col items-center">
+        <hr className="w-full h-[1px] mt-3 bg-[repeating-linear-gradient(to_right,#737373_0_10px,transparent_10px_13px)] border-none" />
         <div className="w-[310px] sm:w-[400px] md:w-[540px] mx-2">
           <p className="pt-3 pb-1 text-18">MESSAGE :</p>
           <p className="font-sans text-14 leading-[1.9] tracking-[0.02em]">
@@ -104,57 +155,6 @@ export default function Scentrie() {
             조건문을 분리하고 우선순위를 명확히 정의하여 검색 유지·전체 보기
             전환 모두 정상적으로 작동하도록 개선했습니다.
           </p>
-        </div>
-      </div>
-
-      <div className="w-full flex flex-col items-center ">
-        <hr className="w-full h-[1px] mt-3 bg-[repeating-linear-gradient(to_right,#737373_0_10px,transparent_10px_13px)] border-none" />
-        <div className="w-[310px] sm:w-[400px] md:w-[540px] mx-2">
-          <p className="pt-3 pb-1 text-18">LINKS :</p>
-
-          <dl className="grid sm:grid-cols-[140px_1fr] gap-x-3 gap-y-1 font-sam text-18 leading-[1.9] tracking-[0.02em] ">
-            <dt>DEPLOYMENT :</dt>
-            <dd>
-              <a
-                href="https://scentrie.vercel.app"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline hover:text-blue-600 break-all"
-              >
-                https://scentrie.vercel.app
-              </a>
-            </dd>
-
-            <dt>TEST ACCOUNT :</dt>
-            <dd>
-              ID : test@gmail.com <br />
-              PW : test1234
-            </dd>
-
-            <dt>DOCS :</dt>
-            <dd>
-              <a
-                href="https://buly.kr/BTQUWud"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline hover:text-blue-600 break-all"
-              >
-                https://buly.kr/BTQUWud
-              </a>
-            </dd>
-
-            <dt>GITHUB :</dt>
-            <dd>
-              <a
-                href="https://github.com/yuhyeon9808/scentrie"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline hover:text-blue-600 break-all"
-              >
-                https://github.com/yuhyeon9808/scentrie
-              </a>
-            </dd>
-          </dl>
         </div>
         <hr className="w-full h-[1px] mt-3 bg-[repeating-linear-gradient(to_right,#737373_0_10px,transparent_10px_13px)] border-none" />
       </div>
