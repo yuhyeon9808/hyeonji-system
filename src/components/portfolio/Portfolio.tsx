@@ -3,7 +3,7 @@ import Image from 'next/image';
 import React from 'react';
 
 export default function Portfolio() {
-  const filePath = '/portfolio.pdf';
+  const filePath = '/Portfolio.pdf';
   const fileName = '유현지_포트폴리오.pdf';
 
   return (
