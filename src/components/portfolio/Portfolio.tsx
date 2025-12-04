@@ -3,8 +3,8 @@ import Image from 'next/image';
 import React from 'react';
 
 export default function Portfolio() {
-  const filePath = '/유현지_포트폴리오.pdf';
-  const fileName = '유현지_포트폴리오.pdf';
+  const filePath = '/포트폴리오_유현지.pdf';
+  const fileName = '포트폴리오_유현지.pdf';
 
   return (
     <div className="text-16 leading-relaxed font-sans">
@@ -25,7 +25,7 @@ export default function Portfolio() {
         </div>
         <div>
           <span className="mx-2 text-gray">·</span>
-          <span className="text-gray-dark text-[13px]">60.2MB</span>
+          <span className="text-gray-dark text-[13px]">24.8MB</span>
         </div>
       </a>
       <p>프로젝트별 상세 설명과 시각 자료가 포함된 포트폴리오입니다.</p>
