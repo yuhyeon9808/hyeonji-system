@@ -54,23 +54,24 @@ export default function Nav({
 
               if (item.type === 'download') {
                 return (
-                  <li
-                    key={item.name}
-                    className="flex items-center hover:bg-blue-point hover:text-white-soft py-3 pl-4 cursor-pointer"
-                    onClick={() => {
-                      onOpenDownload();
-                      setOpen(false);
-                    }}
-                  >
-                    <Image
-                      src={item.Icon}
-                      alt={item.name}
-                      width={25}
-                      height={25}
-                    />
-                    <p className="ml-2 text-14 underline">{item.name[0]}</p>
-                    <p className="text-14">{item.name.slice(1)}</p>
-                  </li>
+                  <Link href="/system/portfolio" key={item.name}>
+                    <li
+                      className="flex items-center hover:bg-blue-point hover:text-white-soft py-3 pl-4 cursor-pointer"
+                      onClick={() => {
+                        onOpenDownload();
+                        setOpen(false);
+                      }}
+                    >
+                      <Image
+                        src={item.Icon}
+                        alt={item.name}
+                        width={25}
+                        height={25}
+                      />
+                      <p className="ml-2 text-14 underline">{item.name[0]}</p>
+                      <p className="text-14">{item.name.slice(1)}</p>
+                    </li>
+                  </Link>
                 );
               }
 
