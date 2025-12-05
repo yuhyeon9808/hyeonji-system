@@ -1,8 +1,8 @@
 export const DESKTOP_ICONS = [
   {
-    name: 'About',
-    href: '/system/about',
+    name: 'Portfolio',
     Icon: '/icons/directory1.png',
+    type: 'download',
   },
   {
     name: 'Q-mate',
@@ -15,10 +15,11 @@ export const DESKTOP_ICONS = [
     Icon: '/icons/site.png',
   },
   {
-    name: 'Portfolio',
+    name: 'FilmLogs',
+    href: '/system/filmLogs',
     Icon: '/icons/file.png',
-    type: 'download',
   },
+
   {
     name: 'Contact',
     Icon: '/icons/envelope1.png',

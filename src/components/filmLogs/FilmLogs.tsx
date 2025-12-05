@@ -1,28 +1,30 @@
 import Image from 'next/image';
 import React from 'react';
 
-export default function Scentrie() {
+export default function FilmLogs() {
   return (
     <div className="w-full my-14 border-y">
       <div className="flex flex-col items-center mx-1 sm:px-0">
         <h2 className="mt-10 mb-10 pb-3 text-4xl text-center border-b">
-          SCENTRIE - FAX TRANSMISSION REPORT
+          FilmLog - FAX TRANSMISSION REPORT
         </h2>
 
         <dl className="grid grid-cols-1 lg:grid-cols-[60px_1fr] gap-x-6 gap-y-1 lg:gap-y-2 leading-relaxed text-18 w-[310px] sm:w-[400px] md:w-[540px] mx-2">
           <dt className="text-18">PROJECT</dt>
-          <dd className="font-sans text-14">Scentrie</dd>
+          <dd className="font-sans text-14">FilmLogs</dd>
 
           <dt className="text-18">PERIOD</dt>
-          <dd className="font-sans text-14">2025.07 ~ 2025.08</dd>
+          <dd className="font-sans text-14">2025.11.24 ~ 2025.12.02</dd>
 
           <dt className="text-18">TYPE</dt>
           <dd className="font-sans text-14">개인 프로젝트</dd>
 
           <dt className="text-18">STACK</dt>
           <dd className="md:w-[460px] font-sans text-14">
-            Next.js · TypeScript · Tailwind CSS · DaisyUI headlessui · React
-            Query · Zustand · Axios · Swiper.js
+            React Native · Expo · TypeScript · NativeWind Supabase · React Query
+            · react-native-modal · react-native-image-picker ·
+            react-native-star-rating-widget ·
+            react-native-keyboard-aware-scroll-view
           </dd>
         </dl>
       </div>
@@ -36,12 +38,11 @@ export default function Scentrie() {
             <dt>DEPLOYMENT :</dt>
             <dd>
               <a
-                href="https://scentrie.vercel.app"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="https://expo.dev/artifacts/eas/xfwNQeDD3xYxyCxt99mHNf.apk"
+                download
                 className="underline hover:text-blue-600 break-all"
               >
-                https://scentrie.vercel.app
+                https://expo.dev/artifacts/eas/xfwNQeDD3xYxyCxt99mHNf.apk
               </a>
             </dd>
 
@@ -51,27 +52,15 @@ export default function Scentrie() {
               PW : test1234
             </dd>
 
-            <dt>DOCS :</dt>
-            <dd>
-              <a
-                href="https://buly.kr/BTQUWud"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline hover:text-blue-600 break-all text-blue-600"
-              >
-                https://buly.kr/BTQUWud
-              </a>
-            </dd>
-
             <dt>GITHUB :</dt>
             <dd>
               <a
-                href="https://github.com/yuhyeon9808/scentrie"
+                href="https://github.com/yuhyeon9808/FilmLogs"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline hover:text-blue-600 break-all"
               >
-                https://github.com/yuhyeon9808/scentrie
+                https://github.com/yuhyeon9808/FilmLogs
               </a>
             </dd>
           </dl>
@@ -83,10 +72,12 @@ export default function Scentrie() {
         <div className="w-[310px] sm:w-[400px] md:w-[540px] mx-2">
           <p className="pt-3 pb-1 text-18">MESSAGE :</p>
           <p className="font-sans text-14 leading-[1.9] tracking-[0.02em]">
-            센트리에는 ‘Scent’와 ‘Galerie’의 합성어로 향기의 갤러리라는 뜻을
-            가지고 있습니다. 다양한 브랜드 향수를 통합 제공하는 향수
-            커머스·큐레이션 플랫폼으로 샘플·본품 구매, 정기 구독, 추천 향수
-            서비스 등을 제공합니다.
+            FilmLogs는 감상한 영화를 간단히 기록하고 모아볼 수 있는 개인 영화
+            리뷰 앱입니다제목, 포스터, 평점, 명대사, 한 줄 감상을 빠르게 남길 수
+            있어 가볍게 아카이브할 수 있습니다. 모든 기록은 검색과 별점
+            필터링으로 손쉽게 찾아볼 수 있으며, 필요한 정보만 담아낸 단순하고
+            직관적인 흐름을 통해 ‘보고, 기록하고, 다시 꺼내보는 경험’을
+            자연스럽게 이어줍니다.
           </p>
         </div>
       </div>
@@ -96,56 +87,31 @@ export default function Scentrie() {
         <div className="w-[310px] sm:w-[400px] md:w-[540px] mx-2">
           <p className="pt-3 pb-1 text-18">FEATURES :</p>
           <ul className="font-sans text-14 leading-[2.3] tracking-[0.02em] pb-3">
-            <li>□ 노트 / 무드 필터 </li>
-            <li>□ 향수 정기구독 서비스 </li>
-            <li>□ 향수 취향 테스트</li>
-            <li>□ 센트리에 매거진</li>
-            <li>□ 장바구니</li>
-            <li>□ 주문내역</li>
+            <li>□ 영화 리뷰 목록 조회 </li>
+            <li>□ 리뷰 추가 · 수정 · 삭제</li>
+            <li>□ 별점 기반 필터링</li>
+            <li>□ 리뷰 검색</li>
           </ul>
         </div>
       </div>
 
       <div className="w-full flex flex-col items-center pb-3">
         <hr className="w-full h-[1px] bg-[repeating-linear-gradient(to_right,#737373_0_10px,transparent_10px_13px)] border-none" />
-        <div className="w-[310px] sm:w-[400px] md:w-[540px] mx-2">
+        <div className="w-[310px] sm:w-[400px] md:w-[540px] mx-2 pb-3">
           <p className="pt-3 pb-1 text-18">ATTACHED FILES :</p>
 
-          <div className="relative mx-auto mt-3 h-[310px] w-[310px] sm:w-[400px] md:w-[540px] bg-[#7A6F81] flex items-center justify-center">
+          <div className="relative mx-auto mt-3 h-[310px] w-[310px] sm:w-[400px] md:w-[540px] bg-[#0D0D0D] flex items-center justify-center">
             <Image
-              src="/scentrie/scentrie_mockup.png"
-              alt="센트리에 시연 목업"
+              src="/filmLogs/FilmLogs.png"
+              alt="필름로그 목업"
               className="object-contain"
               width={290}
               height={290}
             />
           </div>
-          <Image
-            src="/scentrie/scentrie_detail1.png"
-            alt="센트리에 상세페이지"
-            className="object-contain  w-[310px] sm:w-[400px] md:w-[540px] my-5"
-            width={540}
-            height={540}
-          />
-          <Image
-            src="/scentrie/scentrie_suggest.png"
-            alt="센트리에 향수 추천"
-            className="object-contain  w-[310px] sm:w-[400px] md:w-[540px] mb-3"
-            width={540}
-            height={540}
-          />
-
-          <Image
-            src="/scentrie/scentrie_magazine.png"
-            alt="센트리에 매거진"
-            className="object-contain  w-[310px] sm:w-[400px] md:w-[540px] mb-3"
-            width={540}
-            height={540}
-          />
         </div>
+        <hr className="w-full h-[1px] mt-3 bg-[repeating-linear-gradient(to_right,#737373_0_10px,transparent_10px_13px)] border-none" />
       </div>
-
-      <hr className="w-full h-[1px] mt-3 bg-[repeating-linear-gradient(to_right,#737373_0_10px,transparent_10px_13px)] border-none" />
 
       <div className="w-full flex flex-col items-center">
         <p className="w-[310px] sm:w-[400px] md:w-[540px] mx-2 py-3 text-18">
