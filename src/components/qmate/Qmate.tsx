@@ -147,26 +147,7 @@ export default function Qmate() {
         </div>
       </div>
 
-      <div className="w-full flex flex-col items-center">
-        <hr className="w-full h-[1px] mt-3 bg-[repeating-linear-gradient(to_right,#737373_0_10px,transparent_10px_13px)] border-none" />
-        <div className="w-[310px] sm:w-[400px] md:w-[540px] mx-2">
-          <p className="pt-3 pb-1 text-18">TROUBLESHOOTING LOG :</p>
-          <ul className="font-sans text-14 leading-[1.9] tracking-[0.02em]">
-            <li>
-              □ <span className="text-18 font-sam"> Hydration Error — </span>
-              서버·클라이언트 시간 불일치로 생긴 테마 오류를, 서버 시간 기반
-              쿠키와 data-theme 초기화로 일관되게 해결
-            </li>
-            <li>
-              □<span className="text-18 font-sam">OAuth Redirect Error — </span>
-              HTTPS/HTTP 불일치 오류 해결을 위해, FE가 콜백부터 라우팅까지
-              주도하고 BE는 토큰 발급만 담당하도록 아키텍처를 전환하여 안정적인
-              연동 달성
-            </li>
-          </ul>
-        </div>
-        <hr className="w-full h-[1px] mt-3 bg-[repeating-linear-gradient(to_right,#737373_0_10px,transparent_10px_13px)] border-none" />
-      </div>
+      <hr className="w-full h-[1px] mt-3 bg-[repeating-linear-gradient(to_right,#737373_0_10px,transparent_10px_13px)] border-none" />
 
       <div className="w-full flex flex-col items-center">
         <p className="w-[310px] sm:w-[400px] md:w-[540px] mx-2 py-3 text-18">

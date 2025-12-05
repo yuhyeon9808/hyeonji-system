@@ -18,7 +18,7 @@ export default function Nav({
   return (
     <>
       {open && (
-        <nav className="absolute bottom-10 bg-gray-light w-[200px] h-60 z-50 flex border-window">
+        <nav className="fixed bottom-10 bg-gray-light w-[200px] h-60 z-50 flex border-window">
           <div className="bg-[#80807E] w-8 h-full flex items-end justify-center pb-16">
             <div className="rotate-270 origin-center flex items-center">
               <p className="font-sans font-extrabold text-gray-light text-20 mr-1">
