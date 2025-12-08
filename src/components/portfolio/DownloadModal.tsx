@@ -6,8 +6,8 @@ import { usePathname } from 'next/navigation';
 export default function DownloadModal({ onClose }: { onClose: () => void }) {
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '/포트폴리오_유현지.pdf';
-    link.download = '포트폴리오_유현지.pdf';
+    link.href = '/유현지_포트폴리오.pdf';
+    link.download = '유현지_포트폴리오.pdf';
     link.click();
   };
 

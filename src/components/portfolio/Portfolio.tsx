@@ -3,8 +3,8 @@ import Image from 'next/image';
 import React from 'react';
 
 export default function Portfolio() {
-  const filePath = '/포트폴리오_유현지.pdf';
-  const fileName = '포트폴리오_유현지.pdf';
+  const filePath = '/유현지_포트폴리오.pdf';
+  const fileName = '유현지_포트폴리오.pdf';
 
   return (
     <div className="text-16 leading-relaxed font-sans">
