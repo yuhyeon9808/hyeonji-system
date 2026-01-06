@@ -43,9 +43,10 @@ export default function Qmate() {
                 href="https://q-mate.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline hover:text-blue-600 break-all"
+                className="underline break-all"
               >
-                https://q-mate.vercel.app
+                백엔드 서버 중단으로 서비스 진입 불가 자세한 내용은 문서를
+                참고해주세요.
               </a>
             </dd>
 
